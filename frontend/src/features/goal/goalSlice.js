@@ -8,7 +8,7 @@ const initialState = {
   isLoading: false,
   message: "",
 };
-const URL = "https://fullstack-ju2r.onrender.com";
+const URL = "https://fullstack-ju2r.onrender.com/api/goals";
 // create new goal
 const createGoal = createAsyncThunk(
   "goal/createGoal",
