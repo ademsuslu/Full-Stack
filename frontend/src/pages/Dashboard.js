@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import GoalForm from "../components/GoalForm";
-import { getGoals, reset } from "../features/goal/goalSlice";
+import { getGoals } from "../features/goal/goalSlice";
 import Spinner from "../components/Spinner";
 import GoalItem from "../components/GoalItem";
 
