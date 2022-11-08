@@ -13,7 +13,7 @@ const initialState = {
 };
 
 // Register User
-const REGURL = "http://localhost:5000/api/users/";
+const REGURL = "https://fullstack-ju2r.onrender.com/api/users";
 
 // REGİSTER
 const register = createAsyncThunk("auth/register", async (userData) => {
