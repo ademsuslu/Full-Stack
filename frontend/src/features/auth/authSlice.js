@@ -18,7 +18,7 @@ const REGURL = "https://fullstack-ju2r.onrender.com/api/users";
 // REGİSTER
 const register = createAsyncThunk("auth/register", async (userData) => {
   try {
-    const response = await axios.post(REGURL + "register", userData);
+    const response = await axios.post(REGURL + "/register", userData);
     if (response.data) {
       localStorage.setItem("user", JSON.stringify(response.data));
     }
@@ -38,7 +38,7 @@ const logout = createAsyncThunk("auth/logout", async () => {
 //  Login
 const login = createAsyncThunk("auth/login", async (userData) => {
   try {
-    const response = await axios.post(REGURL + "login", userData);
+    const response = await axios.post(REGURL + "/login", userData);
     if (response.data) {
       localStorage.setItem("user", JSON.stringify(response.data));
     }
